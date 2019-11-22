@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MobileDevelopmentApp_B00686672</string>
+    <string name="password">Password/</string>
+    <string name="username">Username/</string>
+    <string name="login">Login</string>
+    <string name="not_registered">Not Registered</string>
+    <string name="ca_register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="ca_login">Login</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="gender">Gender</string>
 </resources>

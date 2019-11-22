@@ -1,56 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/img_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/weather_logo"/>
 
     <EditText
-        android:id="@+id/userName"
-        android:layout_width="290dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="252dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/loginPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="2dp"
+        android:background="#88AFAB"
+        android:hint="@string/username" />
 
     <EditText
-        android:id="@+id/loginPassword"
-        android:layout_width="290dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="76dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/loginButton"
-        app:layout_constraintStart_toStartOf="@+id/userName"
-        app:layout_constraintTop_toBottomOf="@+id/userName" />
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#88AFAB"
+        android:hint="@string/password" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/button_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#13857A"
+        android:onClick="SignIn"
+        android:text="@string/login"/>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/signUpButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
-    <Button
-        android:id="@+id/signUpButton"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="199dp"
-        android:layout_height="62dp"
-        android:text="New User? Sign Up Now"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        tools:layout_editor_absoluteX="109dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="#ffffff"
+            android:text="@string/not_registered"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#86F703"
+            android:textSize="16dp"
+            android:onClick="Register"
+            android:text="@string/register"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

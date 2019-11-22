@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity
     {
         try
         {
-            String username = ((EditText) findViewById(R.id.userName)).getText().toString();
-            String password = ((EditText) findViewById(R.id.loginPassword)).getText().toString();
+            String username = ((EditText) findViewById(R.id.username)).getText().toString();
+            String password = ((EditText) findViewById(R.id.password)).getText().toString();
             if (username.equals("") || password.equals(""))
             {
                 Toast.makeText(MainActivity.this, "Please ensure all fields are filled", Toast.LENGTH_LONG).show();
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity
 
     public void Register(View view)
     {
-        Intent intent = new Intent(MainActivity.this, Register.class);
+        Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
 
