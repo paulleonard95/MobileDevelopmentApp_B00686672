@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/img_background"
+    android:background="#46a093"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".RegisterActivity">
@@ -20,13 +20,16 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
+        android:background="#46a093"
+        android:drawableLeft="@drawable/yellow_name"
         android:hint="@string/name" />
     <EditText
         android:id="@+id/email"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="#88AFAB"
+        android:background="#46a093"
+        android:drawableLeft="@drawable/yellow_email"
         android:hint="@string/email_address" />
 
     <EditText
@@ -35,7 +38,8 @@
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:paddingLeft="2dp"
-        android:background="#88AFAB"
+        android:drawableLeft="@drawable/yellow_account"
+        android:background="#46a093"
         android:hint="@string/username" />
 
     <EditText
@@ -43,7 +47,8 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="#88AFAB"
+        android:background="#46a093"
+        android:drawableLeft="@drawable/yellow_lock"
         android:hint="@string/password" />
 
     <EditText
@@ -51,14 +56,16 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="#88AFAB"
+        android:background="#46a093"
+        android:drawableLeft="@drawable/yellow_lock"
         android:hint="@string/confirm_password" />
     <EditText
         android:id="@+id/gender"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="#88AFAB"
+        android:drawableLeft="@drawable/yellow_face"
+        android:background="#46a093"
         android:hint="@string/gender" />
 
     <Button
@@ -66,7 +73,7 @@
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:background="#13857A"
+        android:background="@drawable/mybutton"
         android:onClick="SignUP_OK"
         android:text="@string/ca_register" />
 
@@ -88,7 +95,7 @@
             android:layout_height="35dp"
             android:paddingLeft="10dp"
             android:textStyle="bold"
-            android:textColor="#86F703"
+            android:textColor="#fdd036"
             android:textSize="16dp"
             android:text="@string/ca_login"/>
 
