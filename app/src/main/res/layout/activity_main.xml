@@ -24,6 +24,9 @@
         android:textColor="#fdd036"
         android:drawableLeft="@drawable/yellow_account"
         android:background="#46a093"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
         android:hint="@string/username" />
 
     <EditText
@@ -34,6 +37,9 @@
         android:textColor="#fdd036"
         android:background="#46a093"
         android:drawableLeft="@drawable/yellow_lock"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
         android:hint="@string/password" />
 
     <Button

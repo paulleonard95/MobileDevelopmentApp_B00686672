@@ -20,15 +20,15 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         try {
             db.execSQL(CREATE_USER_TABLE);
         } catch (Exception er) {
-            Log.e("Error : ", "exception");
+            Log.e("Error : ", "error: unable to create table in database");
         }
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        //Drop the table if exist
+        //Update the table if already there
         db.execSQL("DROP TABLE IF EXISTS " + "user");
-        // Create a new one.
+        //New table is created.
         onCreate(db);
     }
 }
