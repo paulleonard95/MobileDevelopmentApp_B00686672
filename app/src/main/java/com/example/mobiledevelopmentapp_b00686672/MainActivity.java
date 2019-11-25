@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
-
+    public void Reset_Password(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, ResetPassword.class);
+        startActivity(intent);
+    }
     @Override
     protected void onDestroy()
     {

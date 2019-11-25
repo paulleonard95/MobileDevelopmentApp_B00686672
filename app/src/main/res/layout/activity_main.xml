@@ -76,5 +76,15 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/reset_password_button"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:onClick="Reset_Password"
+        android:paddingLeft="10dp"
+        android:text="Reset Password"
+        android:textColor="#fdd036"
+        android:textStyle="bold" />
+
 
 </LinearLayout>
