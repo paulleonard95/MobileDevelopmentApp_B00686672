@@ -59,7 +59,7 @@
         android:background="#46a093"
         android:drawableLeft="@drawable/yellow_lock"
         android:imeOptions="actionSearch"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:maxLines="1"
         android:hint="@string/password" />
 
@@ -71,7 +71,7 @@
         android:background="#46a093"
         android:drawableLeft="@drawable/yellow_lock"
         android:imeOptions="actionSearch"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:maxLines="1"
         android:hint="@string/confirm_password" />
     <EditText
