@@ -7,13 +7,19 @@ import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity
 {
     LoginDatabaseAdapter loginDatabaseAdapter;
+    private FirebaseAuth firebaseAuth;
+    private ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,8 +31,7 @@ public class MainActivity extends AppCompatActivity
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
-        loginDatabaseAdapter = new LoginDatabaseAdapter(this);
-        loginDatabaseAdapter = loginDatabaseAdapter.open();
+        firebaseAuth = FirebaseAuth.getInstance();
     }
 
     public void SignIn(View view)

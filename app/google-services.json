@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "958359077682",
+    "firebase_url": "https://mobiledevelopmentcoursew-17cfa.firebaseio.com",
+    "project_id": "mobiledevelopmentcoursew-17cfa",
+    "storage_bucket": "mobiledevelopmentcoursew-17cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958359077682:android:140324beb3cfdb16ce4d2b",
+        "android_client_info": {
+          "package_name": "com.example.mobiledevelopmentapp_b00686672"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958359077682-l0k8hgcimgcuhj5pik0iuq6s5kd3e0p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN0UrY9Nd3UPQHzmQFgegGjY2ImqyjM_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958359077682-l0k8hgcimgcuhj5pik0iuq6s5kd3e0p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
